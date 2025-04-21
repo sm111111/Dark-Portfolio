@@ -1,0 +1,11 @@
+.HomePage-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* padding: 20px; */
+}
+
+.HomePage-container .section-home {
+    padding: 40px;
+}

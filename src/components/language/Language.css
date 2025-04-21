@@ -1,0 +1,66 @@
+@import url('../../assets/css/style.css');
+
+.Language-container {
+    width: 100%;
+    /* height: 100vh; */
+    /* background: var(--prime-color); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--font);
+    /* box-shadow: var(--box);
+    border: 2px solid red; */
+
+}
+
+
+
+.Language-container .laguage-box {
+    background: var(--hover-color);
+    margin: 10px;
+    /* padding: 10px; */
+    color: var(--font-color);
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 10px;
+    box-shadow: var(--box);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+}
+
+.Language-container .laguage-box:hover {
+    box-shadow: 1px 5px 2px #f3f2f2, 0 2px rgb(199, 10, 224), 0 0 20px rgb(198, 63, 231);
+    ;
+
+
+}
+
+.laguage-box>span {
+    font-size: 3rem;
+}
+
+.laguage-box>p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+
+}
+
+
+
+@media (max-width:700px) {
+    .Language-container .laguage-box {
+        width: 120px;
+        height: 120px;
+    }
+}

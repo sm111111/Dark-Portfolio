@@ -1,0 +1,74 @@
+@import url('../../assets/css/style.css');
+
+.Insperation-container {
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: var(--font);
+    background: var(--font-color);
+}
+
+.Insperation-container .insideConatiner-Insperation {
+    width: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px;
+    text-align: center;
+
+}
+
+.insideConatiner-Insperation>p {
+    font-size: 4rem;
+    color: var(--prime-color);
+}
+
+.insideConatiner-Insperation>h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--prime-color);
+
+}
+
+.insideConatiner-Insperation>h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    /* background: red; */
+    width: 200px;
+    text-transform: capitalize;
+    color: var(--prime-color);
+
+}
+
+@media (max-width:700px) {
+    .Insperation-container {
+        flex-wrap: wrap;
+    }
+
+    .Insperation-container .insideConatiner-Insperation {
+        width: 250px;
+    }
+
+    .insideConatiner-Insperation>p {
+        font-size: 3rem;
+    }
+
+
+    .insideConatiner-Insperation>h2 {
+        font-size: 1.5rem;
+    }
+
+
+    .insideConatiner-Insperation>h4 {
+        font-size: 1rem;
+        /* width: 150px; */
+    }
+
+}

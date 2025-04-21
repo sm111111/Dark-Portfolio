@@ -1,0 +1,110 @@
+@import url('../../assets/css/style.css');
+
+
+
+.HeroSection-container {
+    width: 100%;
+    height: 100vh;
+    /* background: #e0c3ee; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0px;
+    font-family: var(--font);
+
+}
+
+.HeroSection-container .inside-HeroSection {
+    flex: 600 0 0;
+    max-width: 700px;
+    /* background: red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.inside-HeroSection>h1 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 1px 1px 2px #f3f2f2, 0 2px rgb(199, 10, 224), 0 0 2px darkblue;
+}
+
+.inside-HeroSection>span {
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.inside-HeroSection>p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    width: 90%;
+}
+
+.inside-HeroSection>button {
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: var(--font);
+    text-transform: uppercase;
+}
+
+.inside-HeroSection>button:hover {
+    background: #000;
+    color: white;
+
+}
+
+.rigthSide-about {
+    flex: 1;
+    /* background: red; */
+    padding: 20px;
+
+}
+
+.rigthSide-about>img {
+    width: 100%;
+    mix-blend-mode: normal;
+}
+
+@media (max-width:700px) {
+
+    .HeroSection-container {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+        /* background: red; */
+        gap: 40px;
+    }
+
+    .inside-HeroSection>h1 {
+        font-size: 1rem;
+    }
+
+    .inside-HeroSection>span {
+        font-size: 2.5rem;
+    }
+
+    .inside-HeroSection>p {
+        font-size: 1rem;
+    }
+
+    .inside-HeroSection>button {
+        font-size: 1.2rem;
+    }
+
+}

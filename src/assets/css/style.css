@@ -1,0 +1,12 @@
+:root {
+    --prime-color: #393E46;
+    --second-color: #;
+    --font-color: #F7F7F7;
+    --hover-color: rgba(0, 0, 0, 0.2);
+    --icon-color: #b1b1b1;
+    --font: "Oswald", sans-serif;
+    --color: rgb(177, 112, 221);
+    --box: rgba(245, 247, 248, 0.5) 0px 1px 2px 0px, rgba(60, 64, 67, 0.4) 0px 1px 3px 1px;
+    --border: 1px solid grey;
+
+}

@@ -1,0 +1,114 @@
+@import url('../../assets/css/style.css');
+
+.multipleCard-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: var(--font);
+
+}
+
+.inside-multiplecard {
+    width: 300px;
+    height: auto;
+    box-shadow: var(--box);
+    background: var(--prime-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+    border: var(--border);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .inside-multiplecard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+} */
+
+.inside-multiplecard>img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-position: cover;
+    background-size: cover;
+    /* padding: 10px; */
+    background: white;
+    border-radius: 123px 0px 123px 0px;
+    -webkit-border-radius: 123px 0px 123px 0px;
+    -moz-border-radius: 123px 0px 123px 0px;
+}
+
+.name-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--font-color);
+}
+
+.name-link>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    animation: shake 5s 1s infinite ease;
+    transition: 0.2s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1.2);
+        transform: rotate(40deg);
+        opacity: 0.5;
+        color: red;
+    }
+
+    100% {
+        transform: scale(1.8);
+        transform: rotate(-40deg);
+        opacity: 1;
+        color: yellow;
+    }
+}
+
+.name-link>span:hover {
+    color: var(--color);
+}
+
+
+@media (max-width: 768px) {
+    .inside-multiplecard {
+        width: 80%;
+
+    }
+
+    .name-link {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .inside-multiplecard {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .inside-multiplecard>img {
+        height: 150px;
+    }
+
+    .name-link {
+        font-size: 1.2rem;
+    }
+}

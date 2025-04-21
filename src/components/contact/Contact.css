@@ -1,0 +1,118 @@
+@import url('../../assets/css/style.css');
+
+.Contact-container {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    font-family: var(--font);
+}
+
+
+
+.Contact-container .rightSide-Contact {
+    flex: 1;
+    /* background: #53e0bd; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightSide-Contact .insideRigth-Contact {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--prime-color);
+    padding: 40px;
+    text-transform: capitalize;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.insideRigth-Contact>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--font-color);
+}
+
+
+
+.insideRigth-Contact>h1>b {
+    color: var(--color);
+    text-transform: uppercase;
+}
+
+.insideRigth-Contact>input,
+textarea {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    background: var(--font-color);
+
+}
+
+.insideRigth-Contact>textarea {
+    height: 150px;
+}
+
+.insideRigth-Contact>button {
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    color: var(--font-color);
+    color: var(--prime-color);
+}
+
+.insideRigth-Contact>button:hover {
+    background: var(--hover-color);
+    color: var(--font-color);
+
+}
+
+
+@media (max-width:700px) {
+
+
+
+    .Contact-container,
+    .rightSide-Contact {
+        width: 100%;
+    }
+
+    .rightSide-Contact .insideRigth-Contact {
+        border-radius: 20px;
+        padding: 40px 20px;
+
+    }
+
+    .rightSide-Contact .insideRigth-Contact>h1 {
+        font-size: 1.5rem;
+    }
+
+    .rightSide-Contact .insideRigth-Contact {
+        width: 100%;
+    }
+
+    .insideRigth-Contact>input,
+    textarea {
+        padding: 15px;
+    }
+
+    .insideRigth-Contact>textarea {
+        height: 100px;
+    }
+
+    .insideRigth-Contact>button {
+        font-size: 1.2rem;
+    }
+}
