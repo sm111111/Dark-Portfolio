@@ -8,12 +8,13 @@ import { HiOutlineComputerDesktop } from "react-icons/hi2";
 const Service = () => {
 
     const ServiceInfo = [
-
-        { service_icon: <AiFillOpenAI />, service_name: 'UI/UX Design', service_details: 'Hen our power of choice is untrammelled and when nothing prevents our being able' },
-        { service_icon: <AiFillOpenAI />, service_name: 'UI/UX Design', service_details: 'Hen our power of choice is untrammelled and when nothing prevents our being able' },
-        { service_icon: <AiFillOpenAI />, service_name: 'UI/UX Design', service_details: 'Hen our power of choice is untrammelled and when nothing prevents our being able' },
-        { service_icon: <AiFillOpenAI />, service_name: 'UI/UX Design', service_details: 'Hen our power of choice is untrammelled and when nothing prevents our being able' }
+        { service_icon: <AiFillOpenAI />, service_name: 'UI/UX Design', service_details: 'I design responsive, user-friendly web interfaces using React.js, HTML, CSS (Tailwind/Bootstrap), and JavaScript for optimal performance.' },
+        { service_icon: <AiFillOpenAI />, service_name: 'MERN Stack', service_details: 'I develop full-stack applications with MongoDB, Express, React, and Node, integrating RESTful APIs and secure authentication systems.' },
+        { service_icon: <AiFillOpenAI />, service_name: 'JWT', service_details: 'I implement secure login and signup systems with JWT, bcrypt, and role-based access control to protect user  data effectively data effectively.' },
+        { service_icon: <AiFillOpenAI />, service_name: 'Git & GitHub', service_details: 'I manage Git version control and automate deployment workflows with GitHub Actions, ensuring continuous integration and delivery delivery.' }
     ]
+
+
     return (
         <div className='Service-container'>
             <h4>my Service</h4>

@@ -54,6 +54,7 @@ h1 {
     animation: move 4s ease-in-out infinite;
     transition: 0.2s ease-in-out;
 
+
 }
 
 @keyframes move {
@@ -71,11 +72,36 @@ h1 {
 .service-card>span {
     font-size: 4rem;
     color: var(--color);
+    animation: spin 5s ease-in-out infinite;
+    transition: 0.2s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+        color: rgb(190, 102, 241);
+
+        text-shadow: 0 0 5px rgb(190, 102, 241), 0 0 10px rgb(190, 102, 241), 0 0 15px rgb(190, 102, 241), 0 0 20px rgb(0, 255, 255), 0 0 30px rgb(0, 255, 255), 0 0 40px rgb(0, 255, 255);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+        color: rgb(0, 204, 255);
+
+        text-shadow: 0 0 5px rgb(0, 204, 255), 0 0 10px rgb(0, 204, 255), 0 0 15px rgb(0, 204, 255), 0 0 20px rgb(190, 102, 241), 0 0 30px rgb(190, 102, 241), 0 0 40px rgb(190, 102, 241);
+
+    }
 }
 
 .service-card>h2 {
     font-size: 1.5rem;
+    text-transform: uppercase;
 }
+
+
 
 .service-card>p {
     font-size: 1rem;

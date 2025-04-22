@@ -1,36 +1,32 @@
-@import url('../../assets/css/style.css');
-
-
-
 .HeroSection-container {
     width: 100%;
-    height: 100vh;
-    /* background: #e0c3ee; */
+    /* height: 100vh; */
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    /* center horizontally */
     align-items: center;
-    padding: 20px 0px;
+    /* center vertically */
+    flex-wrap: wrap;
+    padding: 20px;
     font-family: var(--font);
-
+    gap: 40px;
 }
 
-.HeroSection-container .inside-HeroSection {
-    flex: 600 0 0;
-    max-width: 700px;
-    /* background: red; */
+.inside-HeroSection {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 40px;
-
+    gap: 30px;
 }
 
 .inside-HeroSection>h1 {
     font-size: 1.2rem;
     text-transform: uppercase;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
     text-shadow: 1px 1px 2px #f3f2f2, 0 2px rgb(199, 10, 224), 0 0 2px darkblue;
@@ -40,8 +36,8 @@
     font-size: 4rem;
     text-transform: capitalize;
     font-weight: 700;
-    flex-wrap: wrap;
     width: 90%;
+    word-break: break-word;
 }
 
 .inside-HeroSection>p {
@@ -52,43 +48,44 @@
 
 .inside-HeroSection>button {
     border: none;
-    font-size: 2rem;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    text-transform: capitalize;
     font-weight: 700;
-    font-family: var(--font);
     text-transform: uppercase;
 }
 
 .inside-HeroSection>button:hover {
     background: #000;
     color: white;
-
 }
 
-.rigthSide-about {
+.rightSide-about {
     flex: 1;
-    /* background: red; */
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-
 }
 
-.rigthSide-about>img {
+.rightSide-about>img {
     width: 100%;
-    mix-blend-mode: normal;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
-@media (max-width:700px) {
-
+@media (max-width: 600px) {
     .HeroSection-container {
-        width: 100%;
-        height: 100%;
-        flex-wrap: wrap;
-        /* background: red; */
-        gap: 40px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 
     .inside-HeroSection>h1 {
@@ -107,4 +104,7 @@
         font-size: 1.2rem;
     }
 
+    .rightSide-about {
+        padding: 10px 0;
+    }
 }

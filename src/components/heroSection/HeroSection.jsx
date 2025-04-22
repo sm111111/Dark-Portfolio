@@ -15,7 +15,7 @@ const HeroSection = () => {
                 <button>Dowload My Cv</button>
             </div>
 
-            <div className="rigthSide-about">
+            <div className="rightSide-about">
                 <img src={profileTwo} alt="" />
             </div>
 

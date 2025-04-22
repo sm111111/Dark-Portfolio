@@ -40,6 +40,7 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+
 }
 
 .allnaviagtion-navlink {
@@ -50,7 +51,22 @@
     cursor: pointer;
     color: var(--font-color);
     transition: 0.2s ease-in-out;
+    border-bottom: 2px solid var(--color);
+    transition: 0.2s ease-in-out;
+    animation: fade 2s ease-in-out;
+
 }
+
+.allnaviagtion-navlink:hover {
+    border-bottom: 2px solid var(--font-color);
+}
+
+.allnaviagtion-navlink:focus {
+    border-bottom: 2px solid var(--font-color);
+    color: white;
+}
+
+
 
 .allnaviagtion-navlink:hover {
     color: var(--color);

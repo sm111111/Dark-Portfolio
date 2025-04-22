@@ -4,10 +4,12 @@ import './About.css'
 const About = () => {
 
     const AboutInfo = [
-        { about_qualification: 'BSc in Computer Science', about_university: 'University of ULAV (2018 - 2022)', about_passingYear: '2016-2018', about_info: 'Pomnis voluptas assumenda est, omnis dolor repellendus.' },
-        { about_qualification: 'BSc in Computer Science', about_university: 'University of ULAV (2018 - 2022)', about_passingYear: '2016-2018', about_info: 'Pomnis voluptas assumenda est, omnis dolor repellendus.' },
-        { about_qualification: 'BSc in Computer Science', about_university: 'University of ULAV (2018 - 2022)', about_passingYear: '2016-2018', about_info: 'Pomnis voluptas assumenda est, omnis dolor repellendus.' },
-    ]
+        { about_qualification: 'Bachelor of Commerce (BCom)', about_university: 'Mumbai University ', about_passingYear: '(2018 - 2022)', about_info: 'laxmichand golwala college of commerce & economics.' },
+        { about_qualification: 'Higher Secondary Certificate (HSC)', about_university: 'Mumbai University ', about_passingYear: '(2016 - 2018)', about_info: 'vidya niketan degree college of commerce.' },
+        { about_qualification: 'Secondary School Certificate (SSC)', about_university: 'maharashtra board', about_passingYear: '(2014 - 2016)', about_info: 'agrasen hindi jr college of commerce.' },
+    ];
+
+
 
 
     return (
