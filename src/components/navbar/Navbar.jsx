@@ -24,7 +24,6 @@ const Navbar = () => {
 
             <div className={`allnaviagtion ${open ? 'active' : ''}`}>
                 <NavLink to='/' className='allnaviagtion-navlink'> home</NavLink>
-                <NavLink to='/about' className='allnaviagtion-navlink'> About me</NavLink>
                 <NavLink to='/project' className='allnaviagtion-navlink'> Project</NavLink>
                 <NavLink to='/contact' className='allnaviagtion-navlink'> Contact</NavLink>
             </div>

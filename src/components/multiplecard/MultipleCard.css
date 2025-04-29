@@ -40,9 +40,8 @@
     background-size: cover;
     /* padding: 10px; */
     background: white;
-    border-radius: 123px 0px 123px 0px;
-    -webkit-border-radius: 123px 0px 123px 0px;
-    -moz-border-radius: 123px 0px 123px 0px;
+
+
 }
 
 .name-link {

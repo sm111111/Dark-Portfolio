@@ -10,6 +10,7 @@
     border-radius: 20px;
     /* background: var(--prime-color); */
     font-family: var(--font);
+
 }
 
 .Navbar-container .logo {
@@ -51,26 +52,30 @@
     cursor: pointer;
     color: var(--font-color);
     transition: 0.2s ease-in-out;
-    border-bottom: 2px solid var(--color);
+    /* border-bottom: 2px solid var(--color); */
     transition: 0.2s ease-in-out;
-    animation: fade 2s ease-in-out;
+    background: linear-gradient(97deg, rgba(81, 41, 240, 1) 0%, rgba(224, 4, 19, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    border-bottom: 2px dotted transparent;
 
-}
 
-.allnaviagtion-navlink:hover {
-    border-bottom: 2px solid var(--font-color);
 }
 
 .allnaviagtion-navlink:focus {
-    border-bottom: 2px solid var(--font-color);
-    color: white;
+    border-bottom: 2px dotted rgb(245, 242, 242);
+
 }
 
 
 
-.allnaviagtion-navlink:hover {
-    color: var(--color);
-}
+
+
+
+
+
 
 .phoneView {
     display: none;

@@ -1,110 +1,123 @@
 .HeroSection-container {
     width: 100%;
     /* height: 100vh; */
+    /* background: skyblue; */
     display: flex;
-    justify-content: center;
-    /* center horizontally */
-    align-items: center;
-    /* center vertically */
-    flex-wrap: wrap;
-    padding: 20px;
-    font-family: var(--font);
-    gap: 40px;
-}
-
-.inside-HeroSection {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.inside-HeroSection>h1 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
+.HeroSection-container .intro-herosection {
+    text-transform: capitalize;
+    font-weight: 400;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* background: red; */
+    width: 100%;
+}
+
+.intro-herosection>h2>b {
+    color: rgb(194, 55, 236);
+    font-weight: 900;
+}
+
+.intro-herosection .comumication {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-herosection .comumication>button {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 16px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    text-shadow: 1px 1px 2px #f3f2f2, 0 2px rgb(199, 10, 224), 0 0 2px darkblue;
-}
-
-.inside-HeroSection>span {
-    font-size: 4rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    width: 90%;
-    word-break: break-word;
-}
-
-.inside-HeroSection>p {
-    font-size: 1.2rem;
-    font-weight: 200;
-    width: 90%;
-}
-
-.inside-HeroSection>button {
-    border: none;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    border-radius: 4px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.inside-HeroSection>button:hover {
-    background: #000;
+    background: #5129f0;
+    background: linear-gradient(97deg, rgba(81, 41, 240, 1) 0%, rgba(224, 4, 19, 1) 100%);
     color: white;
 }
 
-.rightSide-about {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
+.intro-herosection .comumication>button:hover {
+    background: linear-gradient(97deg, rgb(106, 75, 231) 0%, rgb(236, 54, 66) 100%);
+
+}
+
+.comumication-icon {
+    font-size: 18px;
+}
+
+/* ----------------------------------------------------------- */
+
+.HeroSection-container .aboutme-herosection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* background: blue; */
+    flex-wrap: wrap;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.aboutme-herosection .top-aboutme {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 
-.rightSide-about>img {
-    width: 100%;
-    max-width: 100%;
+.aboutme-herosection .top-aboutme>img {
+    width: 400px;
     height: auto;
-    object-fit: contain;
+    border-radius: 10px;
+
 }
 
-@media (max-width: 600px) {
-    .HeroSection-container {
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
+.aboutme-herosection .bottom-aboutme>h2 {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.aboutme-herosection .bottom-aboutme>p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+
+}
+
+@media (max-width:700px) {
+    .intro-herosection .comumication {
+        gap: 10px;
     }
 
-    .inside-HeroSection>h1 {
-        font-size: 1rem;
+    .intro-herosection .comumication>button {
+        padding: 8px 10px;
+        font-size: 10px;
+        gap: 5px;
+        flex-wrap: wrap;
     }
 
-    .inside-HeroSection>span {
-        font-size: 2.5rem;
+    .aboutme-herosection .top-aboutme>img {
+        width: 260px;
     }
 
-    .inside-HeroSection>p {
-        font-size: 1rem;
+    .aboutme-herosection .bottom-aboutme>p {
+        font-size: 0.6rem;
+        width: 98%;
     }
 
-    .inside-HeroSection>button {
-        font-size: 1.2rem;
-    }
 
-    .rightSide-about {
-        padding: 10px 0;
-    }
 }

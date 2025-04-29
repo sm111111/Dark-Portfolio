@@ -21,13 +21,7 @@ const Project = () => {
         <div className='Project-container'>
             <h1>My portfolio</h1>
 
-            {/* <div className="select-project">
-                <span tabIndex={0}>All</span>
-                <span tabIndex={0}>logo</span>
-                <span tabIndex={0}>video</span>
-                <span tabIndex={0}>Grafic</span>
-                <span tabIndex={0}>mockup</span>
-            </div> */}
+
 
             <div className="project-links" >
 
