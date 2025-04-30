@@ -2,38 +2,44 @@ import React from 'react'
 import './HeroSection.css'
 import { IoIosContact } from "react-icons/io";
 import { MdFileDownload } from "react-icons/md";
+import { FaDotCircle } from "react-icons/fa";
 import profileTwo from '../../assets/img/profileTwo.png'
 import { useNavigate } from 'react-router-dom'
 
-
 const HeroSection = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
     const handleMove = (e) => {
         e.preventDefault();
-        navigate('/contact')
+        navigate('/contact');
     }
 
     return (
         <div className='HeroSection-container'>
 
             <div className="intro-herosection">
-                <h2>hello</h2>
-                <h2>this is <b>Shekhar mali</b>,Frontend & MERN-Stack Web Developer | Crafting Dynamic, <b>Responsive UIs</b></h2>
-                <h2><b>web Developer</b></h2>
+                <h2>Hello</h2>
+                <h2>This is <b>Shekhar Mali</b>, Frontend & MERN-Stack Web Developer | Crafting Dynamic, <b>Responsive UIs</b></h2>
+                <h2><b>Web Developer</b></h2>
                 <div className="comumication">
-                    <button onClick={handleMove}>Conatct me <IoIosContact className='comumication-icon' /></button>
-                    <button>get resume <MdFileDownload className='comumication-icon' /></button>
+                    <button onClick={handleMove}>Contact me <IoIosContact className='comumication-icon' /></button>
+                    <button>Get Resume <MdFileDownload className='comumication-icon' /></button>
                 </div>
+            </div>
+
+            <div className="inside-HeroSection">
+                <h1><FaDotCircle style={{ color: 'red' }} /> Hello I’m Shekhar Mali</h1>
+                <span>Frontend & MERN-Stack Web Developer | Crafting Dynamic, Responsive UIs</span>
+                <p>Hello, I’m Shekhar Mali, a passionate Frontend & MERN-Stack Web Developer and recent graduate. I specialize in HTML, CSS, and JavaScript for crafting engaging UIs, complemented by React for building dynamic interfaces. On the backend, I work with Node.js, Express, MongoDB, and JWT for secure, scalable applications. Skilled in modern development workflows, I focus on writing clean, maintainable code with attention to performance, accessibility, and responsive design. Throughout my studies and hands-on exercises, I’ve cultivated a user-first approach and strong problem-solving abilities. Eager to learn and contribute, I’m excited to apply my skills to build innovative digital experiences and solutions.</p>
+                <button>Download My CV</button>
             </div>
 
             <div className="aboutme-herosection">
                 <div className="top-aboutme">
-                    <img src={profileTwo} alt="" />
+                    <img src={profileTwo} alt="Profile" />
                 </div>
-
                 <div className="bottom-aboutme">
-                    <h2>Who i am</h2>
+                    <h2>Who I Am</h2>
                     <br />
                     <p>Hello, I’m Shekhar Mali, a Frontend/MERN-stack developer specializing in responsive, user-focused web applications. I build interfaces with HTML, CSS, JavaScript and React, and develop secure backends with Node.js, Express, MongoDB and JWT, applying the MVC pattern for modularity.
 
@@ -46,12 +52,6 @@ const HeroSection = () => {
                         I thrive in collaborative environments where continuous learning and clear communication drive innovation. I’m eager to join a forward-thinking team and contribute MVC-driven architecture expertise to deliver scalable, impactful digital solutions and maintain high user satisfaction.</p>
                 </div>
             </div>
-
-
-
-
-
-
 
         </div>
     )
