@@ -4,6 +4,7 @@ import { IoIosContact } from "react-icons/io";
 import { MdFileDownload } from "react-icons/md";
 import profileTwo from '../../assets/img/profileTwo.png'
 import { useNavigate } from 'react-router-dom'
+import { FaDotCircle } from "react-icons/fa";
 
 
 const HeroSection = () => {
