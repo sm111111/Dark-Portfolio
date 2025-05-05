@@ -16,7 +16,7 @@ const About = () => {
         <div className='About-container'>
 
             <div className="insideAbout">
-                <h1>eduction</h1>
+                {/* <h1>eduction</h1> */}
 
                 {
                     AboutInfo.length > 0 ? (

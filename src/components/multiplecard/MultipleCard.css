@@ -14,14 +14,14 @@
 .inside-multiplecard {
     width: 300px;
     height: auto;
-    box-shadow: var(--box);
+    /* box-shadow: var(--box); */
     background: var(--prime-color);
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
 
-    border: var(--border);
+    /* border: var(--border); */
     border-radius: 12px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

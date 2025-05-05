@@ -43,16 +43,21 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
     background: #5129f0;
     background: linear-gradient(97deg, rgba(81, 41, 240, 1) 0%, rgba(224, 4, 19, 1) 100%);
     color: white;
+    transition: 0.4s ease-in-out;
 }
 
 .intro-herosection .comumication>button:hover {
-    background: linear-gradient(97deg, rgb(106, 75, 231) 0%, rgb(236, 54, 66) 100%);
-
+    background: rgba(0, 0, 0, 0.4);
 }
+
+.intro-herosection .comumication>button:focus {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+
 
 .comumication-icon {
     font-size: 18px;

@@ -49,8 +49,9 @@ h1 {
     padding: 40px;
     box-shadow: var(--box);
     border-radius: 4px;
-    border-left: 2px solid red;
-    border-right: 2px solid blue;
+    border: 2px solid rgb(239, 19, 247);
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
     animation: move 4s ease-in-out infinite;
     transition: 0.2s ease-in-out;
 
@@ -59,12 +60,14 @@ h1 {
 
 @keyframes move {
     0% {
-        border-left: 2px solid blue;
+        border: 2px solid rgb(239, 19, 247);
+        border-left: 2px solid rgb(250, 138, 10);
 
     }
 
     100% {
-        border-right: 2px solid red;
+        border: 2px solid rgb(239, 19, 247);
+        border-right: 2px solid rgb(250, 138, 10);
     }
 
 }
@@ -72,7 +75,7 @@ h1 {
 .service-card>span {
     font-size: 4rem;
     color: var(--color);
-    animation: spin 5s ease-in-out infinite;
+    animation: spin 5s linear infinite;
     transition: 0.2s ease-in-out;
 }
 

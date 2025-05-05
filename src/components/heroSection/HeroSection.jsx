@@ -15,6 +15,18 @@ const HeroSection = () => {
         navigate('/contact')
     }
 
+    const DownloadPDF = (e) => {
+        e.preventDefault();
+
+        const link = document.createElement('a')
+        link.href = '/cv.pdf';
+        link.download = './cv.pdf';
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
+
+    }
+
     return (
         <div className='HeroSection-container'>
 
@@ -24,7 +36,7 @@ const HeroSection = () => {
                 <h2><b>web Developer</b></h2>
                 <div className="comumication">
                     <button onClick={handleMove}>Conatct me <IoIosContact className='comumication-icon' /></button>
-                    <button>get resume <MdFileDownload className='comumication-icon' /></button>
+                    <button onClick={DownloadPDF} tabIndex={0}>get resume <MdFileDownload className='comumication-icon' /></button>
                 </div>
 
 

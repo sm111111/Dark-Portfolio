@@ -7,11 +7,12 @@
     align-items: center;
     flex-direction: column;
     font-family: var(--font);
+    background: transparent;
 }
 
 .About-container .insideAbout {
     width: 100%;
-    background: var(--hover-color);
+    /* background: var(--hover-color); */
     display: flex;
     justify-content: space-between;
     gap: 20px;
