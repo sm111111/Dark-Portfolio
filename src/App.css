@@ -2,9 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  /* background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 53%, rgba(0, 212, 255, 1) 100%); */
 }
 
 body {
-  background: #131010;
+  /* background: #3d0335;
+  background: linear-gradient(90deg, rgba(61, 3, 53, 0.9) 20%, rgba(40, 14, 43, 1) 53%, rgba(0, 0, 0, 0.91) 92%); */
+
+  background: #3d0335;
+  background: linear-gradient(90deg, rgba(61, 3, 53, 1) 20%, rgba(40, 14, 43, 1) 53%, rgba(0, 0, 0, 0.91) 92%);
 }

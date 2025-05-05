@@ -25,8 +25,8 @@ const HomePage = () => {
             <section className='section-home'><Project /></section>
             <Border border_name='eduction' />
             <section className='section-home'><About /></section>
-            <Insperation />
             <Extra />
+            <Insperation />
             <Border border_name='Skills' />
             <section className='section-home'><Language /></section>
         </div>
