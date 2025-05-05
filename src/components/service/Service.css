@@ -54,7 +54,7 @@ h1 {
     border-right: 2px solid transparent;
     animation: move 4s ease-in-out infinite;
     transition: 0.2s ease-in-out;
-
+    margin: 10px;
 
 }
 
@@ -75,7 +75,7 @@ h1 {
 .service-card>span {
     font-size: 4rem;
     color: var(--color);
-    animation: spin 5s linear infinite;
+    /* animation: spin 5s linear infinite; */
     transition: 0.2s ease-in-out;
 }
 

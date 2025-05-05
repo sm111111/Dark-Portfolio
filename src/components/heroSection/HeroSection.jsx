@@ -2,10 +2,11 @@ import React from 'react'
 import './HeroSection.css'
 import { IoIosContact } from "react-icons/io";
 import { MdFileDownload } from "react-icons/md";
-import profileTwo from '../../assets/img/profileTwo.png'
+import shekhar from '../../assets/img/shekhar.jpg'
 import { useNavigate } from 'react-router-dom'
 import { FaDotCircle } from "react-icons/fa";
-
+import Lottie from 'lottie-react'
+import profileShow from '../../profileShow.json'
 
 const HeroSection = () => {
     const navigate = useNavigate()
@@ -42,7 +43,7 @@ const HeroSection = () => {
 
                 <div className="aboutme-herosection">
                     <div className="top-aboutme">
-                        <img src={profileTwo} alt="" />
+                        <Lottie animationData={profileShow} />
                     </div>
 
                     <div className="bottom-aboutme">

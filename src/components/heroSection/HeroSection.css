@@ -67,6 +67,8 @@
 
 .HeroSection-container .aboutme-herosection {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 20px;
     /* background: blue; */
@@ -81,14 +83,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 60%;
+    overflow: hidden;
 }
 
-.aboutme-herosection .top-aboutme>img {
-    width: 400px;
-    height: auto;
-    border-radius: 10px;
 
-}
 
 .aboutme-herosection .bottom-aboutme>h2 {
     color: blueviolet;
@@ -100,6 +99,7 @@
 .aboutme-herosection .bottom-aboutme>p {
     font-size: 0.8rem;
     line-height: 1.6;
+    margin-bottom: 0;
 
 }
 
@@ -115,8 +115,13 @@
         flex-wrap: wrap;
     }
 
-    .aboutme-herosection .top-aboutme>img {
-        width: 260px;
+    .HeroSection-container .aboutme-herosection {
+        width: 100%;
+
+    }
+
+    .aboutme-herosection .top-aboutme {
+        width: 100%;
     }
 
     .aboutme-herosection .bottom-aboutme>p {

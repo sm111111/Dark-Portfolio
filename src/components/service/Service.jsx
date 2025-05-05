@@ -3,7 +3,9 @@ import './Service.css'
 import { AiFillOpenAI } from "react-icons/ai";
 import { SiAdobecreativecloud } from "react-icons/si";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
-
+import Rocket from '../../Rocket.json'
+import Laptop from '../../Laptop.json'
+import Lottie from 'lottie-react'
 
 const Service = () => {
 
@@ -29,7 +31,7 @@ const Service = () => {
                     ServiceInfo.length > 0 ? (
                         ServiceInfo.map((item, index) => (
                             <div className="service-card" key={index}>
-                                <span>{item.service_icon}</span>
+                                <span><Lottie animationData={Rocket} /></span>
                                 <h2>{item.service_name}</h2>
                                 <p>{item.service_details}</p>
                             </div>

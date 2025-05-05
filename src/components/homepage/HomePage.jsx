@@ -8,6 +8,7 @@ import Language from '../language/Language'
 import Service from '../service/Service'
 import About from '../about/About'
 import Border from '../border/Border'
+import Extra from '../extra/Extra'
 
 
 
@@ -25,6 +26,7 @@ const HomePage = () => {
             <Border border_name='eduction' />
             <section className='section-home'><About /></section>
             <Insperation />
+            <Extra />
             <Border border_name='Skills' />
             <section className='section-home'><Language /></section>
         </div>
